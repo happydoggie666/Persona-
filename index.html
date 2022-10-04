@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personas</title>
+    <!-- import javascript variables and functions -->
+    <script src="app.js"></script>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" /> 
+  </head>
+  <style>
+    body{
+      background-color:aliceblue;
+    }
+  </style>
+
+  <!-- page content goes into <body> -->
+  <body>
+    <div id = "page-content">
+      <h1 id="persona">Persona & Storyboarding </h1>
+      <h2 id="introduction">Introduction</h2>
+      This is a project about the coffee machine interface in CIT, which is only open to master students, PHD & faculty. In this study, I recorded observations
+      from the users as well as conducting interviews on the users regarding their experiences and expectation of the interface design. I also created two personas
+      along with 1 storyboard to illustrate the current issue with the coffee machine interface.
+      <h2 id="sketch-of-the-interface">Sketch of the interface</h2>
+      <div id = "sketch">
+        <!--
+        <img src="assets\coffee_machine_unopened.jpg" alt="coffee machine unopened" style="width:500px;height:600px;">
+        <img src="assets\coffee_machine_opened.jpg" alt="coffee machine opened" style="width:450px;height:500px;">
+        -->
+        <center>
+        <img src="assets\coffee_machine_open_closed.png" alt="coffee machine unopened" style="width:800px;height:600px; border: solid 2px #D1D3D5;">
+        </center>
+      </div>
+      <h3 id="button-function">Button Function</h3>
+      <ul>
+        <li>OPEN: the area where we can place the coffee beans</li>
+        <li>Expresso: Expresso Roast</li>
+        <li>Mild: Mild Roast</li>
+        <li>Medium: Medium Roast</li>
+        <li>Bold: Bold Roast</li>
+        <li>Iced: Iced Roast (yea it is not Iced water, trust me~)</li>
+        <li>HOT WATER: Hot Water</li>
+      </ul>
+      <img src="assets\coffee_machine_function.jpg" alt="coffee machine function instruction" style="width:500px;height:600px; border: solid 2px #D1D3D5;">
+      <h3 id="status-instruction">Status Instruction</h3>
+      <ul>
+        <li>Ready to brew, make selection: When there is no pods in the machine and no selection is made</li>
+        <li>Making selection, the door will be closed: When pods is placed and the door is not closed</li>
+        <li>Drink Steeping: When soaking the pods while not brewing, the step before brewing. </li>
+        <li>Drinking Brewing, Caution Hot: When the coffee machine is brewing</li>
+        <li>Brew Cycle Complete: When the brew Cycle is complete</li>
+      </ul>
+      <h3 id="function-key-interactive-components">Function &amp; Key Interactive Components</h3>
+      <p>Coffee brewing machine which can brew coffee based on people’s selection </p>
+      <p><strong>Key Interactive Components</strong>: Brewing Button, place where we could place the coffee pods, coffee machine status screen, composite recycling bin &amp; place related to cleaning</p>
+      
+      <h2 id="Observations">Observations</h2>
+      <h3 id="key-observations">Key observations</h3>
+      <ol>
+        <li>People always ignore the “WARNING: DO NOT CLOSE  DOOR WITH HAND” warning, including me when I’m first using it. This happened for all 3 users.</li>
+        <li>One user hasn’t used the coffee machine in CIT before, he is very shy and very struggled about what he could do. 1 faculty came and noticed the phenomena, she kindly explained how it should be used. And the user’s comment is: “Oh sorry I haven’t used it before, I don’t know that I have to put the coffee pods in manually. It looks really confusing. Thank you.”</li>
+        <li>One user forgot to press the ‘OPEN button’ before she made the selection of how she would like the pods to be roasted. It seems it is not her first time using this machine. . She seems to be very busy and impatient. 
+        </li>
+      </ol>
+      <h3 id="interview-questions">Interview Questions</h3>
+      <p>Background: Interview happened at the CIT kitchen, and the coffee machine is only open to faculty, master and phd.</p>
+      <p>First, say hi to warm up. </p>
+      <ol>
+        <li>Morning/Hi, How are you? How’s your day?</li>
+        <li>Are you a faculty or a student - master or phd?  (PS: I’m limiting the question to master and phd because the coffee machine at CIT is only open to faculty, master and phd.)</li>
+        <li>Do you have a heavy workload normally? How long would you spend in the CIT office to finish your work or hang out?</li>
+      </ol>
+      <p>Then, ask question to know the user’s habits.</p>
+      <ol>
+        <li>Are you at the kitchen for the coffee ? If so, how frequently do you use this coffee machine? If not, how often do you use the kitchen?</li>
+        <li>Which coffee roast do you usually make? Mild, Medium, Hot, Iced? </li>
+        <li>Do you know that different types of roast actually yield different amounts of coffee given the same amount of pods? How do you feel about this fact? </li>
+        <li>How do you normally solve problem 3? Will you use another bag of pods or will you add some water to your coffee?</li>
+      </ol>
+      <p>If the users have experienced(at each level is fine) with the coffee machine, continue:</p>
+      <ol>
+        <li>Are you familiar with each button? When you first use it, do you find it hard to know the workflow of the machine? Are you familiar with it now (if you use it more than once)?</li>
+        <li>Have you ever pressed the ” iced” button? What do you think that it would do?</li>
+        <li>What is your primary expectation of the coffee machine interface? </li>
+        <li>Do you like the current coffee machine interface and do you find any trouble using it?</li>
+        <li>Do you have any suggestions to help improve the coffee machine interface?</li>
+      </ol>
+      <h3 id="summary-of-the-answers">Summary of the answers</h3>
+      <ol>
+        <li>Without a clear instruction of the step of using a coffee machine, many people don’t know they have to click on open first + place the coffee pods before brewing. Also, coffee machines always break down unexpectedly.</li>
+        <li>Many people think “Iced” means iced water not iced roast and this is incorrect and they don’t know the “iced roast” made by this coffee machine is indeed hot.</li>
+        <li>Many people are annoyed that different roast yields different amounts of coffee providing the same amount of pods and some of them need to use multiple bags of pods for a coffee. There is never an instruction of this and the coffee machine makers assume their users all know the difference in advance.</li>
+        <li>Another interesting problem with the interface is that the website link on the interface is “404 not found” and this is really confusing for people who are trying to search for information.</li>
+        <li>People all think that it would be better if there are some hints (i.e. number) suggesting the workflow. If there is a “1” besides the “OPEN” button, “2” besides the “MILD, MEDIUM, DARK, ICED” buttons, it would be much easier to use and can avoid many embarrassing moments.</li>
+      </ol>
+      
+      <h2 id="personas">Personas</h2>
+      <table id="Table">
+        <tr>
+          <td id="td2"><img src="assets\Sherrie Claire.png" width="100%" height="100%" alt="Sherrie Claire"/></td>
+          <td id="td-text">
+            <p style="text-align:left; font-size: medium;">Sherrie Claire is an associate professor who is very busy with her work. She is already tired enough that she doesn't want to wait and wastes her brain on other things not related to her courses’ work or her jobs. She is a heavy coffee drinker and she has used a coffee machine before. However, today when she came for a coffee, the coffee machine broke. </p>
+            <p style="text-align:left; font-size: medium;">She can represent the user groups who have used the coffee machine before but might forget the instructions every time. They are usually busy and can get very annoyed if the coffee machine breaks down unexpectedly.</p>
+          </td>
+        </tr>
+        <tr>
+          <td id="td-text">
+            <p style="text-align:left; font-size: medium">Aldous Claire is a 1st year PHD who just came to Brown CS department, he is very professional yet shy and rarely asks for help from others. He is struggling with the current research process and comes for a coffee. He has never used this machine before.</p>
+            <p style="text-align:left; font-size: medium;">Aldous can represent the user groups that haven't used a coffee machine before so they don’t know how to use it. Yet some of them are shy and reluctant to ask for help. They are confident that they can solve it themselves. However, not knowing the steps and not knowing they have to put pods before brewing, they failed to operate this machine. They will think having an instruction and a step hint label on the coffee machine is much better and can save them from many embarrassing moments.</p>
+          </td>
+          <td id="td2"><img src="assets\Aldous Levine.png" width="100%" height="100%" alt="Aldous Levine"/></td>
+        </tr>
+      </table>
+        
+      <h2 id="storyboards">Storyboards (for Aldous Levine)</h2>
+      
+      <table id="Table">
+        <tr>
+          <td id="td1" style="padding: 15px" width="20%" height="300rpx">
+            <center>
+              <img src="assets\storyboard_1.png" width="100%" height="250rpx" border="2" alt=""/>
+              <P style="font-size: medium;">Aldous tries to figure out a hard problem.</P>
+            </center>
+          </td>
+          
+          <td id="td1" style="padding: 15px" width="20%" height="300rpx">
+            <center>
+              <img src="assets\storyboard_2.png" width="100%" height="250rpx" border="2" alt=""/>
+              <P style="font-size: medium;">Aldous tries his solution on his computer.</P>
+            </center>
+          </td>
+          <td id="td1" style="padding: 15px" width="20%" height="300rpx">
+            <center>
+              <img src="assets\storyboard_3.png" width="100%" height="250rpx" border="2" alt=""/>
+              <P style="font-size: medium;">Aldous wants to have a cup of coffee.</P>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td id="td1" style="padding: 15px" width="20%" height="300rpx">
+            <center>
+              <img src="assets\storyboard_4.png" width="100%" height="250rpx" border="2" alt=""/>
+            </center>
+            <P style="font-size: medium;">Aldous goes to the lounge. Many students are taking a break.</P>
+          </td>
+              
+          <td id="td1" style="padding: 15px" width="20%" height="300rpx">
+            <center>
+              <img src="assets\storyboard_5.png" width="100%" height="250rpx" border="2" alt=""/>
+            </center>
+            <P style="font-size: medium;">Aldous decides to figure out how to use the coffee machine himself.</P>
+          </td>
+          <td id="td1" style="padding: 15px" width="20%" height="300rpx">
+            <center>
+              <img src="assets\storyboard_6.png" width="100%" height="250rpx" border="2" alt=""/>
+              <P style="font-size: medium;">Aldous thought he figured out how it works, but soon he realizes he was wrong.</P>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td id="td1" style="padding: 15px" width="20%" height="300rpx">
+            <center>
+              <img src="assets\storyboard_7.png" width="100%" height="250rpx" border="2" alt=""/>
+              <P style="font-size: medium;">Though others have the same problem, he's just uncomfortable to ask.</P>
+            </center>
+          </td>
+          <td id="td1" style="padding: 15px" width="20%" height="300rpx">
+            <center>
+              <img src="assets\storyboard_8.png" width="100%" height="250rpx" border="2" alt=""/>
+              <P style="font-size: medium;">Someone tries to help him, but he's too shy. So he refuses to accept help.</P>
+            </center>
+          </td>
+          <td id="td1" style="padding: 15px" width="20%" height="300rpx">
+            <center>
+              <img src="assets\storyboard_9.png" width="100%" height="250rpx" border="2" alt=""/>
+              <P style="font-size: medium;">He tried so many times, but it's still not work. It's so ridiculous.</P>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td id="td1" style="padding: 15px" width="20%" height="300rpx">
+            <center>
+              <img src="assets\storyboard_10.png" width="100%" height="250rpx" border="2" alt=""/>
+              <P style="font-size: medium;">He feels that the coffee machine against him.</P>
+            </center>
+            </td>
+          <td id="td1" style="padding: 15px" width="20%" height="300rpx">
+            <center>
+              <img src="assets\storyboard_11.png" width="100%" height="250rpx" border="2" alt=""/>
+              <P style="font-size: medium;">He stares at the coffee machine angrily.</P>
+            </center>
+          </td>
+          <td id="td1" style="padding: 15px" width="20%" height="300rpx">
+            <center>
+              <img src="assets\storyboard_12.png" width="100%" height="250rpx" border="2" alt=""/>
+              <P style="font-size: medium;">Finally he gives up.</P>
+            </center>
+            </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+
+</html>
