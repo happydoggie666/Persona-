@@ -37,6 +37,10 @@ personas.td-text{
   height:120%;
 }
 
+.td2:hover{
+  transform: scale(1.8);
+}
+
 
 
 .banner {
@@ -464,3 +468,8 @@ html{
   overflow-x:hidden;
 }
 
+
+
+backBtn{
+  
+}
